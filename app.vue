@@ -392,7 +392,7 @@ const handleSubmit = async () => {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.1;
-  color: #1b1e2e;
+  color: #fcf3ea;
   margin: 0 0 16px 0;
   text-align: center;
   width: 100%;
@@ -403,7 +403,7 @@ const handleSubmit = async () => {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
-  color: #1b1e2e;
+  color: #fcf3ea;
   margin: 0 0 16px 0;
   text-align: center;
   width: 100%;
