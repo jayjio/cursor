@@ -6,7 +6,7 @@
       <div ref="ctaSectionRef" class="cta-section">
         <h1 class="section-title">get to know [not really] me</h1>
         <p class="section-description">This is an interactive AI tool that can answer questions about my experience, my work, and what I care about. I built it using Claude's API and tools like Figma, Cursor, the Model Context Protocol, and a context document to give it relevant context about me.</p>
-        <p class="section-description">Want to know more about how it works? Click the first suggested question below!</p>
+        <p class="section-description">Check out the fiurst suggested question down below.</p>
         <div class="cta-container">
           <!-- Text Field with Floating Label -->
           <div
