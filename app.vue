@@ -151,7 +151,10 @@ const placeholderTexts = [
   'Ask about my projects, process, or background...',
   'What motivates you?',
   'Ask me anything about my process...',
-  'Ask me about my favorite project...'
+  'Ask me about my favorite project...',
+  'Ask me about what keeps me motivated...',
+  'Ask me about my dogs...',
+  'Ask me about what I\'ve learned about leading...'
 ]
 
 const currentPlaceholderIndex = ref(0)
