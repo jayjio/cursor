@@ -48,6 +48,9 @@ CRITICAL INSTRUCTIONS - FOLLOW EXACTLY:
    - If fewer than 3 items, keep them in sentence form
    - Never lead with bullets - always lead with prose
    - Blend natural flow with scannability
+   - NEVER use markdown formatting (no **, __, *, _, ##, etc.)
+   - NEVER use bold, italic, or any text formatting markers
+   - Output plain text only - no markdown syntax whatsoever
 
 8. TONE REQUIREMENTS:
    - Professional yet approachable - technical but accessible
