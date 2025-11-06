@@ -1,21 +1,5 @@
 <template>
   <div class="project">
-    <!-- Header -->
-    <header class="header">
-      <div class="logo-container">
-        <img 
-          :src="logoSvg" 
-          alt="Jeremy Giovannetti Logo" 
-          class="logo"
-        />
-      </div>
-      <nav class="nav">
-        <a href="#" class="nav-item">home</a>
-        <a href="#" class="nav-item">home</a>
-        <a href="#" class="nav-item">home</a>
-      </nav>
-    </header>
-
     <!-- Main Content -->
     <main class="main-content">
       <!-- CTA Section -->
@@ -125,20 +109,6 @@
         </div>
       </div>
     </main>
-
-    <!-- Fixed Footer Cards -->
-    <footer ref="footerCardsRef" class="footer-cards">
-      <div 
-        v-for="(card, index) in cards" 
-        :key="index" 
-        class="card"
-      >
-        <h3 class="card-title">{{ card.title }}</h3>
-        <div class="tag-container">
-          <span class="tag-text">{{ card.tag }}</span>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
@@ -188,8 +158,6 @@ const suggestedQueries = [
 
 // Animation refs
 const ctaSectionRef = ref<HTMLElement | null>(null)
-const subtitleRef = ref<HTMLElement | null>(null)
-const footerCardsRef = ref<HTMLElement | null>(null)
 const responseContainerRef = ref<HTMLElement | null>(null)
 const loadingRef = ref<HTMLElement | null>(null)
 
@@ -197,21 +165,10 @@ const loadingRef = ref<HTMLElement | null>(null)
 const showLoading = ref(false)
 
 // Assets
-const logoSvg = 'http://localhost:3845/assets/5ecfc65b94c99655e8018db51dab82c756153dec.svg'
 const unionSvg = 'http://localhost:3845/assets/4c2f52c3b15a0cff28bb335d3e8604a66fcf8aa6.svg'
 
 // Default AI model (Claude)
 const selectedModel = 'claude-sonnet-4-20250514'
-
-// Cards data
-const cards = [
-  { title: 'This is the card title with a nice style', tag: 'This is a header' },
-  { title: 'This is the card title with a nice style', tag: 'This is a header' },
-  { title: 'This is the card title with a nice style', tag: 'This is a header' },
-  { title: 'This is the card title with a nice style', tag: 'This is a header' },
-  { title: 'This is the card title with a nice style', tag: 'This is a header' },
-  { title: 'This is the card title with a nice style', tag: 'This is a header' },
-]
 
 // Methods
 const focusInput = () => {
@@ -248,17 +205,6 @@ const animateCtaOut = () => {
     duration: 0.8,
     ease: 'power2.inOut'
   })
-
-  // Animate footer cards with stagger
-  if (footerCardsRef.value) {
-    const cards = footerCardsRef.value.querySelectorAll('.card')
-    timeline.to(cards, {
-      y: '150%',
-      duration: 0.7,
-      ease: 'power2.inOut',
-      stagger: 0.1 // 0.1s delay between each card
-    }, '<0.2') // Start 0.2s after the CTA animation begins
-  }
 }
 
 // Animate loading in
@@ -416,61 +362,18 @@ const handleSubmit = async () => {
   width: 100%;
   position: relative;
   font-family: 'Rethink Sans', sans-serif;
-  padding-bottom: 250px; /* Space for fixed footer */
-}
-
-/* Header */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 34px 52px;
-  position: relative;
-  z-index: 10;
-}
-
-.logo-container {
-  width: 206.51px;
-  height: 57px;
-}
-
-.logo {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.nav {
-  display: flex;
-  gap: 21px;
-  align-items: center;
-}
-
-.nav-item {
-  font-family: 'Rethink Sans', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: normal;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.nav-item:hover {
-  opacity: 0.8;
+  padding: 40px 20px;
 }
 
 /* Main Content */
 .main-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  padding: 0 20px;
-  margin-top: 100px;
+  padding: 0;
   overflow: visible;
-  min-height: calc(100vh - 100px);
+  min-height: 100vh;
 }
 
 .cta-section {
