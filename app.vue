@@ -5,8 +5,8 @@
       <!-- CTA Section -->
       <div ref="ctaSectionRef" class="cta-section">
         <h1 class="section-title">Get to know [not really] me</h1>
-        <p class="section-description">This is an interactive tool I built using Figma and the MCP Server, Claude Code, Claude API, and Cursor. It's essentially an AI agent that utilizes a context doc to answer questions about my experience, my work, and what I care about.</p>
-        <p class="section-description">If you would like to hear the process and tool stack in more detail, click the first suggested question below!</p>
+        <p class="section-description">This is an interactive AI tool that can answer questions about my experience, my work, and what I care about. I built it using Claude's API and tools like Figma, Cursor, the Model Context Protocol, and a context document to give it relevant context about me.</p>
+        <p class="section-description">Want to know more about how it works? Click the first suggested question below!</p>
         <div class="cta-container">
           <!-- Text Field with Floating Label -->
           <div
