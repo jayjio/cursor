@@ -4,7 +4,7 @@
     <main class="main-content">
       <!-- CTA Section -->
       <div ref="ctaSectionRef" class="cta-section">
-        <h1 class="section-title">Get to know [not really] me</h1>
+        <h1 class="section-title">get to know [not really] me</h1>
         <p class="section-description">This is an interactive AI tool that can answer questions about my experience, my work, and what I care about. I built it using Claude's API and tools like Figma, Cursor, the Model Context Protocol, and a context document to give it relevant context about me.</p>
         <p class="section-description">Want to know more about how it works? Click the first suggested question below!</p>
         <div class="cta-container">
@@ -383,7 +383,7 @@ const handleSubmit = async () => {
   display: flex;
   flex-direction: column;
   gap: 11px;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
 }
 
@@ -394,7 +394,7 @@ const handleSubmit = async () => {
   line-height: 1.1;
   color: #fcf3ea;
   margin: 0 0 16px 0;
-  text-align: center;
+  text-align: left;
   width: 100%;
 }
 
@@ -405,7 +405,7 @@ const handleSubmit = async () => {
   line-height: 1.6;
   color: #fcf3ea;
   margin: 0 0 16px 0;
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: 817px;
 }
