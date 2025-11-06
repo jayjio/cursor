@@ -400,7 +400,7 @@ const handleSubmit = async () => {
 .section-description {
   font-family: 'Sora', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   color: #fcf3ea;
   margin: 0 0 16px 0;
