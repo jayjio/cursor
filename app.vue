@@ -519,7 +519,7 @@ const handleSubmit = async () => {
 .cta-text {
   font-family: 'Sora', sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   line-height: normal;
   color: var(--white-color);
   white-space: nowrap;
