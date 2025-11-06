@@ -157,7 +157,7 @@ const placeholderTexts = [
 const currentPlaceholderIndex = ref(0)
 const placeholderKey = ref(0)
 
-// Rotate placeholder text every 3 seconds
+// Rotate placeholder text every 4 seconds
 let placeholderInterval: NodeJS.Timeout | null = null
 
 onMounted(() => {
@@ -166,7 +166,7 @@ onMounted(() => {
       currentPlaceholderIndex.value = (currentPlaceholderIndex.value + 1) % placeholderTexts.length
       placeholderKey.value++
     }
-  }, 3000)
+  }, 4000)
 })
 
 // Cleanup interval on unmount
@@ -492,7 +492,7 @@ const handleSubmit = async () => {
   pointer-events: none;
   transform-origin: left center;
   width: calc(100% - (var(--textfield-padding-lr) * 2));
-  animation: slideUpFade 0.6s ease-in-out;
+  animation: scrollVertical 4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .floating-label.floating {
@@ -721,22 +721,22 @@ const handleSubmit = async () => {
   }
 }
 
-@keyframes slideUpFade {
+@keyframes scrollVertical {
   0% {
     opacity: 0;
-    transform: translate(0, calc(-50% + 20px));
+    transform: translate(0, calc(-50% + 30px));
   }
-  20% {
+  15% {
     opacity: 1;
     transform: translate(0, -50%);
   }
-  80% {
+  85% {
     opacity: 1;
     transform: translate(0, -50%);
   }
   100% {
     opacity: 0;
-    transform: translate(0, calc(-50% - 20px));
+    transform: translate(0, calc(-50% - 30px));
   }
 }
 
