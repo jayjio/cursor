@@ -143,9 +143,9 @@ const currentLoadingMessage = computed(() => {
 
 // Computed placeholder text
 const placeholderText = computed(() => {
-  return (isFocused.value || inputValue.value) 
+  return (isFocused.value || inputValue.value)
     ? 'You can use a suggested question (lame) or ask your own (cool)'
-    : 'Want to get to know each other better? Ask me anything'
+    : 'Let\'s get to know each other! Ask me anything'
 })
 
 // Suggested queries
