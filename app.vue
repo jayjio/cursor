@@ -147,10 +147,6 @@ const currentLoadingMessage = computed(() => {
 
 // Rotating placeholder texts
 const placeholderTexts = [
-  'Ask me anything about my work...',
-  'Ask about my projects, process, or background...',
-  'What motivates you?',
-  'Ask me anything about my process...',
   'Ask me about my favorite project...',
   'Ask me about what keeps me motivated...',
   'Ask me about my dogs...',
