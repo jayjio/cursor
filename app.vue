@@ -4,6 +4,8 @@
     <main class="main-content">
       <!-- CTA Section -->
       <div ref="ctaSectionRef" class="cta-section">
+        <h1 class="section-title">Get to know me</h1>
+        <p class="section-description">This is an interactive element I built myself using Figma MCP server, Claude Code, Claude API, and Cursor. It is an AI agent that utilizes a context document where I input content and set parameters for it to answer any question about my past work, background, and even what I care about. I had a ton of fun building it, and I believe it does a great job of showcasing my ability while also filling a unique value that I will continue to refine. I invite you to try and break it.</p>
         <div class="cta-container">
           <!-- Text Field with Floating Label -->
           <div
@@ -381,6 +383,29 @@ const handleSubmit = async () => {
   gap: 11px;
   align-items: center;
   padding: 20px;
+}
+
+.section-title {
+  font-family: 'Rethink Sans', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.1;
+  color: var(--white-color);
+  margin: 0 0 16px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.section-description {
+  font-family: 'Rethink Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--white-color);
+  margin: 0 0 32px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 817px;
 }
 
 .cta-container {
@@ -808,21 +833,29 @@ const handleSubmit = async () => {
   .header {
     padding: 24px 32px;
   }
-  
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .section-description {
+    font-size: 15px;
+  }
+
   .cta-section {
     width: 100%;
   }
-  
+
   .cta-container {
     flex-direction: column;
     height: auto;
   }
-  
+
   .text-field-open {
     width: 100%;
     min-height: 80px;
   }
-  
+
   .cta-button {
     width: 100%;
   }
@@ -834,15 +867,24 @@ const handleSubmit = async () => {
     gap: 20px;
     align-items: center;
   }
-  
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-description {
+    font-size: 14px;
+    margin: 0 0 24px 0;
+  }
+
   .nav {
     gap: 15px;
   }
-  
+
   .nav-item {
     font-size: 18px;
   }
-  
+
   .footer-cards {
     justify-content: flex-start;
     padding: 15px;
