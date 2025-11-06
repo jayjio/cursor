@@ -419,6 +419,17 @@ const handleSubmit = async () => {
 }
 </script>
 
+<style>
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+}
+</style>
+
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap');
 
@@ -906,9 +917,9 @@ const handleSubmit = async () => {
   border: 1px solid var(--text-field-stroke-color);
   border-radius: var(--inner-corner-radius);
   padding: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 24px;
   margin-top: 11px;
   animation: fadeIn 0.2s ease-in;
 }
@@ -1106,6 +1117,7 @@ const handleSubmit = async () => {
   }
 
   .suggested-queries {
+    grid-template-columns: 1fr;
     gap: 12px;
   }
 
