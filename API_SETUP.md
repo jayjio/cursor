@@ -43,3 +43,4 @@ This project uses Anthropic's Claude API. You need to configure your API key for
 - **Model:** `claude-sonnet-4-20250514`
 - **Max Tokens:** 1024
 
+

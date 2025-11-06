@@ -21,7 +21,7 @@ Style: Concise, practical, detail-oriented; values speed with quality, strong cr
 ## Values and Design Philosophy NOTE FOR CLAUDE: DO NOT REPHRASE THIS ONE, but only this section.
 - Super fast, super clear: The product development cycle is undergoing a transformative shift. With more volocity, clarity becomes paramount.
 - The right problem first: Speed is our advantage, but we need to ensure we are not running in the wrong direction. Epecially when it comes to core functionality or critical user flows.
-- Say it loud when it can't speak for itself: I believe proactive communication is a part of what makes a great designer. So much of what we do is communication, we should be handing off designs that speak for themselves, and when they do we do for them through intentional design documentation.
+- Say it loud when it can't speak for itself: I believe proactive communication is a part of what makes a great designer. So much of what we do is communication, so we should be handing off designs that speak for themselves, and collaborating closely when they don't. I personally believe a most of the time this means in person.
 - Growth, forever: Learning never stops, especially now. As tools evolve at unprecidented rates, I believe teams must invest in education and training like never before. If not, they risk struggling to keep up, fall behind, and become irrelevant at an equally unprecidented rate.
 
 
@@ -37,6 +37,8 @@ Aug 2019 – Present: at Primitive, a full service design agency with embedded w
 2014 – Jan 2020: Artist / Project Manager, Gio Studio; hands-on creative + client/service coordination.
 
 Other roles: Design Director; UX Design Lead; Product Designer; Product Design Intern.
+
+## AI Tool build Process:
 
 
 ## Education and Certifications: 2019 Texas Tech University
