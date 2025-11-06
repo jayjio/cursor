@@ -5,7 +5,7 @@
       <!-- CTA Section -->
       <div ref="ctaSectionRef" class="cta-section">
         <h1 class="section-title">Get to know me</h1>
-        <p class="section-description">This is an interactive element I built myself using Figma MCP server, Claude Code, Claude API, and Cursor. It is an AI agent that utilizes a context document where I input content and set parameters for it to answer any question about my past work, background, and even what I care about. I had a ton of fun building it, and I believe it does a great job of showcasing my ability while also filling a unique value that I will continue to refine. I invite you to try and break it.</p>
+        <p class="section-description">This is an interactive element I built myself using Figma MCP server, Claude Code, Claude API, and Cursor. It is an AI agent that utilizes a context document where I input content and set parameters for it to answer any question about my past work, background, and even what I care about. I had a ton of fun building it, and I believe it does a great job of showcasing my ability while also filling a unique value that I will continue to refine. The first "suggested" question will have the agent explain my process in more detail as to how it was built. I invite you to ask it anything and try and break it.</p>
         <div class="cta-container">
           <!-- Text Field with Floating Label -->
           <div
