@@ -49,7 +49,7 @@
         </div>
 
         <!-- Suggested Queries (Outside container) -->
-        <div v-if="isFocused && !inputValue" class="suggested-queries">
+        <div v-if="!inputValue" class="suggested-queries">
           <button
             v-for="(query, index) in suggestedQueries"
             :key="index"
