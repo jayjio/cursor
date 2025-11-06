@@ -5,7 +5,9 @@
       <!-- CTA Section -->
       <div ref="ctaSectionRef" class="cta-section">
         <h1 class="section-title">Get to know me</h1>
-        <p class="section-description">This is an interactive element I built myself using Figma MCP server, Claude Code, Claude API, and Cursor. It is an AI agent that utilizes a context document where I input content and set parameters for it to answer any question about my past work, background, and even what I care about. I had a ton of fun building it, and I believe it does a great job of showcasing my ability while also filling a unique value that I will continue to refine. The first "suggested" question will have the agent explain my process in more detail as to how it was built. I invite you to ask it anything and try and break it.</p>
+        <p class="section-description">This is an interactive element I built myself using Figma MCP server, Claude Code, Claude API, and Cursor. It is an AI agent that utilizes a context document where I input content and set parameters for it to answer any question about my past work, background, and even what I care about.</p>
+        <p class="section-description">I had a ton of fun building it, and I believe it does a great job of showcasing my ability while also filling a unique value that I will continue to refine.</p>
+        <p class="section-description">The first "suggested" question will have the agent explain my process in more detail as to how it was built. I invite you to ask it anything and try and break it.</p>
         <div class="cta-container">
           <!-- Text Field with Floating Label -->
           <div
@@ -390,7 +392,7 @@ const handleSubmit = async () => {
   font-weight: 600;
   font-size: 48px;
   line-height: 1.1;
-  color: var(--white-color);
+  color: #1b1e2e;
   margin: 0 0 16px 0;
   text-align: center;
   width: 100%;
@@ -398,14 +400,18 @@ const handleSubmit = async () => {
 
 .section-description {
   font-family: 'Sora', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 1.6;
-  color: var(--white-color);
-  margin: 0 0 32px 0;
+  color: #1b1e2e;
+  margin: 0 0 16px 0;
   text-align: center;
   width: 100%;
   max-width: 817px;
+}
+
+.section-description:last-of-type {
+  margin: 0 0 32px 0;
 }
 
 .cta-container {
