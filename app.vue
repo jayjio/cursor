@@ -151,9 +151,9 @@ const placeholderText = computed(() => {
 // Suggested queries
 const suggestedQueries = [
   'What\'s your experience and background?',
-  'What tools do you use?',
-  'What are you working on right now?',
   'What do you value as a designer?',
+  'What are you working on right now?',
+  'What tools do you use?',
   'What do you do outside of work?',
   'Gimme a random *random* fact'
 ]
