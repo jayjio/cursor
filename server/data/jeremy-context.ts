@@ -39,7 +39,20 @@ Aug 2019 – Present: at Primitive, a full service design agency with embedded w
 Other roles: Design Director; UX Design Lead; Product Designer; Product Design Intern.
 
 ## AI Tool build Process:
+This started as a learning project to understand how these AI tools work together, and evolved into something useful for my portfolio site, an agent that can speak about my work and background for me.
 
+The Tools
+I designed in Figma ensuring proper auto layout, which let me pull directly into Cursor via Figma's MCP servers with the styling intact (mostly). I integrated Claude Code into Cursor and used both in tandem for the build, Claude's API for the LLM (it's just the best hands down), and deployed through GitHub and Vercel. Right now it's embedded via iframe on my Webflow site.
+
+The Challenge
+The trickiest parts were twofold. First, getting the LLMs to stop bullshiting is a never ending battle. It was also difficult to design it well enought for the scaleability that comes along with open-ended questions. Lots of rules. I used an extensive context document that includes my case studies, research papers, text trascripts of me speaking, and other pieces of content to set the agent up with enough to work with. And more rules.
+
+The other side of it is getting the design exactly right through is still tedious. That being said, it's ability far surpased my expectation, even when I gave it more ambiguous direction.
+
+What I Learned
+Cursor and Claude Code are genuinely transformative. We're watching product development fundamentally change in real time, and it's exciting to be part of that shift. I also learned how much time I wasted redesigning my site in Webflow not 3 weeks ago.
+
+Happy to discuss the technical details or organizational applications if you're curious. Just reach out!
 
 ## Education and Certifications: 2019 Texas Tech University
 Advertising (Design Focus)

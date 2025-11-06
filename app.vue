@@ -114,6 +114,16 @@
           {{ aiResponse }}
         </div>
       </div>
+
+      <!-- Ask Another Button -->
+      <div v-if="aiResponse" ref="askAnotherRef" class="ask-another-container">
+        <button class="ask-another-button" @click="scrollToTop">
+          <span class="ask-another-text">Ask another</span>
+          <svg class="arrow-icon-up" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 1L9 13M9 1L15 7M9 1L3 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
     </main>
   </div>
 </template>
@@ -198,6 +208,7 @@ const suggestedQueries = [
 const ctaSectionRef = ref<HTMLElement | null>(null)
 const responseContainerRef = ref<HTMLElement | null>(null)
 const loadingRef = ref<HTMLElement | null>(null)
+const askAnotherRef = ref<HTMLElement | null>(null)
 
 // Loading state for animation
 const showLoading = ref(false)
@@ -215,6 +226,27 @@ const focusInput = () => {
     hasSearched.value = false
   }
   inputRef.value?.focus()
+}
+
+const scrollToTop = () => {
+  // Clear the response and reset state
+  inputValue.value = ''
+  aiResponse.value = ''
+  lastQuery.value = ''
+  hasSearched.value = false
+
+  // Scroll the CTA section into view
+  if (ctaSectionRef.value) {
+    ctaSectionRef.value.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    })
+  }
+
+  // Focus the input after scrolling
+  setTimeout(() => {
+    inputRef.value?.focus()
+  }, 500)
 }
 
 const selectSuggestedQuery = (query: string) => {
@@ -279,6 +311,22 @@ const animateLoadingOut = () => {
 const animateResponseIn = () => {
   if (responseContainerRef.value) {
     gsap.fromTo(responseContainerRef.value,
+      {
+        opacity: 0,
+        y: 55
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: 'power2.out'
+      }
+    )
+  }
+
+  // Animate ask another button at the same time
+  if (askAnotherRef.value) {
+    gsap.fromTo(askAnotherRef.value,
       {
         opacity: 0,
         y: 55
@@ -887,6 +935,56 @@ const handleSubmit = async () => {
   transform: translateX(2px);
 }
 
+/* Ask Another Button */
+.ask-another-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  padding: 0 20px;
+}
+
+.ask-another-button {
+  background-color: transparent;
+  border: 2px solid var(--white-color);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 24px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.ask-another-button:hover {
+  background-color: rgba(252, 243, 234, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(252, 243, 234, 0.2);
+}
+
+.ask-another-button:active {
+  transform: translateY(0);
+}
+
+.ask-another-text {
+  font-family: 'Sora', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: normal;
+  color: #fcf3ea;
+  white-space: nowrap;
+}
+
+.arrow-icon-up {
+  width: 14px;
+  height: 18px;
+  color: var(--white-color);
+  transform: rotate(0deg);
+}
+
 /* Responsive adjustments */
 @media (max-width: 1024px) {
   .header {
@@ -1008,6 +1106,16 @@ const handleSubmit = async () => {
   .footer-cards {
     justify-content: flex-start;
     padding: 15px;
+  }
+
+  .ask-another-button {
+    height: 48px;
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  .ask-another-container {
+    margin-top: 20px;
   }
 }
 
