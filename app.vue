@@ -929,11 +929,72 @@ const handleSubmit = async () => {
 
   .section-title {
     font-size: 32px;
+    line-height: 1.2;
   }
 
   .section-description {
     font-size: 14px;
+    line-height: 1.7;
     margin: 0 0 24px 0;
+  }
+
+  .cta-section {
+    padding: 16px;
+  }
+
+  .cta-button {
+    min-height: 52px;
+    font-size: 18px;
+    padding: 16px 24px;
+  }
+
+  .text-field-open {
+    min-height: 56px;
+    font-size: 16px;
+  }
+
+  .floating-label {
+    font-size: 16px;
+  }
+
+  .text-input {
+    font-size: 16px;
+  }
+
+  .suggested-queries {
+    gap: 12px;
+  }
+
+  .suggested-query-item {
+    min-height: 48px;
+    padding: 14px 18px;
+    font-size: 15px;
+  }
+
+  .response-container-main {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 24px 20px;
+    margin-top: 16px;
+  }
+
+  .response-header {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+
+  .response-content {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .loading-spinner {
+    width: 80px;
+    height: 80px;
+  }
+
+  .loading-text {
+    font-size: 14px;
   }
 
   .nav {
@@ -947,6 +1008,22 @@ const handleSubmit = async () => {
   .footer-cards {
     justify-content: flex-start;
     padding: 15px;
+  }
+}
+
+/* Reduce motion for accessibility and mobile performance */
+@media (prefers-reduced-motion: reduce) {
+  .floating-label {
+    animation: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .loading-spinner,
+  .fog-layer-1,
+  .fog-layer-2,
+  .fog-layer-3,
+  .center-glow {
+    animation: none;
   }
 }
 </style>
