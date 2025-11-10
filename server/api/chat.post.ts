@@ -11,6 +11,35 @@ function getNextFactNumber() {
 }
 
 export default defineEventHandler(async (event) => {
+  // Handle CORS
+  const origin = getHeader(event, 'origin')
+  
+  // Get allowed origins from environment variable or use defaults
+  const envOrigins = process.env.ALLOWED_ORIGINS?.split(',').map(o => o.trim()) || []
+  const defaultOrigins = [
+    'https://www.jeremygio.com',
+    'https://jeremygio.com',
+    'http://localhost:3000',
+    'http://localhost:8888' // Webflow preview
+  ]
+  const allowedOrigins = [...defaultOrigins, ...envOrigins]
+  
+  // In development, allow all origins for easier testing
+  const isDevelopment = process.env.NODE_ENV === 'development'
+  
+  // Set CORS headers
+  if (origin && (allowedOrigins.includes(origin) || isDevelopment)) {
+    setHeader(event, 'Access-Control-Allow-Origin', origin)
+    setHeader(event, 'Access-Control-Allow-Methods', 'POST, OPTIONS')
+    setHeader(event, 'Access-Control-Allow-Headers', 'Content-Type')
+    setHeader(event, 'Access-Control-Max-Age', '86400')
+  }
+
+  // Handle OPTIONS request
+  if (event.method === 'OPTIONS') {
+    return { status: 'ok' }
+  }
+
   const config = useRuntimeConfig()
   const { message, model = 'claude-sonnet-4-20250514' } = await readBody(event)
 

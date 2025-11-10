@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremy Chat Widget - Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: system-ui, -apple-system, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Jeremy Chat Widget Example</h1>
+        
+        <!-- Widget Container -->
+        <div id="jeremy-chat-widget" data-jeremy-chat-widget data-api-url="http://localhost:3000/api/chat"></div>
+    </div>
+
+    <!-- Widget Script -->
+    <script src="./jeremy-chat-widget.iife.js"></script>
+    
+    <!-- Alternative: Programmatic initialization -->
+    <script>
+        // Wait for script to load, then initialize
+        // window.JeremyChatWidget.init('jeremy-chat-widget', {
+        //     apiUrl: 'http://localhost:3000/api/chat',
+        //     theme: {
+        //         bgColor: '#1a1c23',
+        //         panelBgColor: '#22242b',
+        //         textColor: '#fcf3ea',
+        //         borderColor: '#363944'
+        //     }
+        // });
+    </script>
+</body>
+</html>

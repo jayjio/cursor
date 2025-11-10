@@ -4,7 +4,10 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "build:widget": "vite build --config widget/vite.config.ts && npm run copy:widget",
+    "copy:widget": "mkdir -p public/widget && cp dist/widget/jeremy-chat-widget.iife.js public/widget/ && cp dist/widget/nuxt-app.css public/widget/",
     "dev": "nuxt dev",
+    "dev:widget": "vite build --watch --config widget/vite.config.ts",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
@@ -19,6 +22,9 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest"
+    "@nuxt/devtools": "latest",
+    "@vitejs/plugin-vue": "^6.0.0",
+    "terser": "^5.26.0",
+    "vite": "^6.0.0"
   }
 }
