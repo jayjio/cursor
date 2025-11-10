@@ -11,5 +11,13 @@ export default defineNuxtConfig({
     public: {
       // Add any public config here if needed
     }
+  },
+
+  nitro: {
+    // Ensure public assets are served correctly
+    prerender: {
+      // Don't prerender widget files - serve them as static assets
+      ignore: ['/widget/*']
+    }
   }
 })
