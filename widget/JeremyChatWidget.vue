@@ -5,7 +5,7 @@
       <!-- CTA Section -->
       <div ref="ctaSectionRef" class="cta-section">
         <h1 class="section-title">get to know [not really] me</h1>
-        <p class="section-description">This is an AI tool I built that can answer questions about my experience, work, interests, and who knows what else. Hopefully not my security questions and biggest regrets.</p>
+        <p class="section-description">This is an AI tool I built that can answer questions about my experience, work, interests, and who knows what else. Hopefully not my security questions.</p>
         <p class="section-description">For design and dev, I used Figma with the MCP server protocol, Cursor, and Claude Code. For the LLM, I used the Claude API and an extensive context doc along with Github and Vercel for deployment and finally a standalone Vue component embedded into my Webflow site.</p>
         <p class="section-description">Want to hear more about how it was built? Check out the first suggested question down below ↓</p>
         <div class="cta-container">
