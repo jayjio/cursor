@@ -10567,7 +10567,6 @@ var JeremyChatWidget = (function(exports) {
                 ref: ctaSectionRef,
                 class: "cta-section"
               }, [
-                _cache[4] || (_cache[4] = createStaticVNode('<h1 class="section-title" data-v-ef81138d>get to know <span class="gradient-text" data-v-ef81138d>[not really]</span> me</h1><p class="section-description" data-v-ef81138d>This is an AI tool I built that can answer questions about my experience, work, interests, and who knows what else. Hopefully not my security questions.</p><p class="section-description tech-item" data-v-ef81138d>→ For design and dev, I used Figma with the MCP server protocol, Cursor, and Claude Code.</p><p class="section-description tech-item" data-v-ef81138d>→ For the LLM, I used the Claude API and an extensive context doc along with Github and Vercel for deployment.</p><p class="section-description tech-item" data-v-ef81138d>→ The last step was creating a standalone Vue component embedded into my Webflow site.</p><p class="section-description" data-v-ef81138d>Want to hear more about how it was built? Check out the first suggested question down below ↓</p>', 6)),
                 createBaseVNode("div", _hoisted_3, [
                   createBaseVNode("div", {
                     class: normalizeClass(["text-field-open", { "is-focused": isFocused.value || inputValue.value }]),
@@ -10626,7 +10625,7 @@ var JeremyChatWidget = (function(exports) {
                 ref: loadingRef,
                 class: "loading-container"
               }, [
-                _cache[5] || (_cache[5] = createStaticVNode('<svg class="loading-spinner" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" data-v-ef81138d><defs data-v-ef81138d><radialGradient id="fogGradient1" cx="30%" cy="30%" data-v-ef81138d><stop offset="0%" stop-color="rgba(255, 255, 255, 0.15)" data-v-ef81138d></stop><stop offset="50%" stop-color="rgba(255, 255, 255, 0.05)" data-v-ef81138d></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-ef81138d></stop></radialGradient><radialGradient id="fogGradient2" cx="70%" cy="60%" data-v-ef81138d><stop offset="0%" stop-color="rgba(252, 243, 234, 0.12)" data-v-ef81138d></stop><stop offset="60%" stop-color="rgba(252, 243, 234, 0.03)" data-v-ef81138d></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-ef81138d></stop></radialGradient><radialGradient id="fogGradient3" cx="50%" cy="80%" data-v-ef81138d><stop offset="0%" stop-color="rgba(255, 255, 255, 0.1)" data-v-ef81138d></stop><stop offset="50%" stop-color="rgba(255, 255, 255, 0.02)" data-v-ef81138d></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-ef81138d></stop></radialGradient><radialGradient id="centerGlow" data-v-ef81138d><stop offset="0%" stop-color="rgba(255, 255, 255, 0.12)" data-v-ef81138d></stop><stop offset="70%" stop-color="rgba(255, 255, 255, 0)" data-v-ef81138d></stop></radialGradient><filter id="glow" data-v-ef81138d><feGaussianBlur stdDeviation="2" result="coloredBlur" data-v-ef81138d></feGaussianBlur><feMerge data-v-ef81138d><feMergeNode in="coloredBlur" data-v-ef81138d></feMergeNode><feMergeNode in="SourceGraphic" data-v-ef81138d></feMergeNode></feMerge></filter></defs><circle cx="60" cy="60" r="55" fill="url(#fogGradient1)" class="fog-layer-1" data-v-ef81138d></circle><circle cx="60" cy="60" r="55" fill="url(#fogGradient2)" class="fog-layer-2" data-v-ef81138d></circle><circle cx="60" cy="60" r="55" fill="url(#fogGradient3)" class="fog-layer-3" data-v-ef81138d></circle><circle cx="60" cy="60" r="40" fill="url(#centerGlow)" class="center-glow" filter="url(#glow)" data-v-ef81138d></circle></svg>', 1)),
+                _cache[4] || (_cache[4] = createStaticVNode('<svg class="loading-spinner" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" data-v-cf14602d><defs data-v-cf14602d><radialGradient id="fogGradient1" cx="30%" cy="30%" data-v-cf14602d><stop offset="0%" stop-color="rgba(255, 255, 255, 0.15)" data-v-cf14602d></stop><stop offset="50%" stop-color="rgba(255, 255, 255, 0.05)" data-v-cf14602d></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-cf14602d></stop></radialGradient><radialGradient id="fogGradient2" cx="70%" cy="60%" data-v-cf14602d><stop offset="0%" stop-color="rgba(252, 243, 234, 0.12)" data-v-cf14602d></stop><stop offset="60%" stop-color="rgba(252, 243, 234, 0.03)" data-v-cf14602d></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-cf14602d></stop></radialGradient><radialGradient id="fogGradient3" cx="50%" cy="80%" data-v-cf14602d><stop offset="0%" stop-color="rgba(255, 255, 255, 0.1)" data-v-cf14602d></stop><stop offset="50%" stop-color="rgba(255, 255, 255, 0.02)" data-v-cf14602d></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-cf14602d></stop></radialGradient><radialGradient id="centerGlow" data-v-cf14602d><stop offset="0%" stop-color="rgba(255, 255, 255, 0.12)" data-v-cf14602d></stop><stop offset="70%" stop-color="rgba(255, 255, 255, 0)" data-v-cf14602d></stop></radialGradient><filter id="glow" data-v-cf14602d><feGaussianBlur stdDeviation="2" result="coloredBlur" data-v-cf14602d></feGaussianBlur><feMerge data-v-cf14602d><feMergeNode in="coloredBlur" data-v-cf14602d></feMergeNode><feMergeNode in="SourceGraphic" data-v-cf14602d></feMergeNode></feMerge></filter></defs><circle cx="60" cy="60" r="55" fill="url(#fogGradient1)" class="fog-layer-1" data-v-cf14602d></circle><circle cx="60" cy="60" r="55" fill="url(#fogGradient2)" class="fog-layer-2" data-v-cf14602d></circle><circle cx="60" cy="60" r="55" fill="url(#fogGradient3)" class="fog-layer-3" data-v-cf14602d></circle><circle cx="60" cy="60" r="40" fill="url(#centerGlow)" class="center-glow" filter="url(#glow)" data-v-cf14602d></circle></svg>', 1)),
                 createBaseVNode("p", _hoisted_9, toDisplayString(currentLoadingMessage.value), 1)
               ], 512)) : createCommentVNode("", true),
               aiResponse.value ? (openBlock(), createElementBlock("div", {
@@ -10652,7 +10651,7 @@ var JeremyChatWidget = (function(exports) {
                 createBaseVNode("button", {
                   class: "ask-another-button",
                   onClick: scrollToTop
-                }, [..._cache[6] || (_cache[6] = [
+                }, [..._cache[5] || (_cache[5] = [
                   createBaseVNode("span", { class: "ask-another-text" }, "Ask another", -1),
                   createBaseVNode("svg", {
                     class: "cycle-icon-refresh",
@@ -10675,7 +10674,7 @@ var JeremyChatWidget = (function(exports) {
                   key: 0,
                   class: "another-fact-button",
                   onClick: getAnotherFact
-                }, [..._cache[7] || (_cache[7] = [
+                }, [..._cache[6] || (_cache[6] = [
                   createBaseVNode("span", { class: "another-fact-text" }, "Next fact", -1),
                   createBaseVNode("svg", {
                     class: "arrow-icon-right",
@@ -10708,7 +10707,7 @@ var JeremyChatWidget = (function(exports) {
     }
     return target;
   };
-  const JeremyChatWidget2 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-ef81138d"]]);
+  const JeremyChatWidget2 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-cf14602d"]]);
   function injectCSS(cssUrl) {
     if (typeof document === "undefined") return;
     const existingLink = document.querySelector("link[data-jeremy-chat-widget-css]");
