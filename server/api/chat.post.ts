@@ -128,8 +128,10 @@ CRITICAL INSTRUCTIONS - FOLLOW EXACTLY:
    ${currentFactNumber ? `- You MUST share interesting fact #${currentFactNumber} (look for "NOTE FOR CHATGPT: Use as 'interesting fact' ${['first', 'second', 'third', 'fourth', 'fifth', 'sixth'][currentFactNumber - 1]}")` : '- Facts are numbered (first, second, third, fourth, fifth, sixth) in the ## Personal Interests and Lifestyle section'}
    - Only share the specific fact indicated above
    - You MAY paraphrase the fact to make it conversational and natural
-   - DO NOT add any information that is not in the original fact
-   - DO NOT embellish or expand beyond what is written in the context
+   - CRITICAL: DO NOT add ANY information that is not in the original fact in the context document
+   - CRITICAL: DO NOT embellish, expand, or add details beyond what is explicitly written in the context
+   - CRITICAL: If the fact doesn't include certain details, DO NOT add them - only use what is there
+   - You can rephrase the wording but must stick to the exact information provided
    - Keep it conversational and in first person
    - Don't mention the fact number to the user
 
