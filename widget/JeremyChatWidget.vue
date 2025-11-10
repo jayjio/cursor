@@ -533,16 +533,19 @@ const handleSubmit = async () => {
   padding: 0;
   overflow: visible;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .cta-section {
-  width: 817px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 817px;
   display: flex;
   flex-direction: column;
   gap: 11px;
   align-items: flex-start;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .gradient-text {
