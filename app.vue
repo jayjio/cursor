@@ -572,7 +572,7 @@ html, body {
 .floating-label.floating {
   font-size: 14px;
   top: 50%;
-  transform: translateY(-50%) translateY(-10px);
+  transform: translateY(-50%) translateY(-16px);
   font-weight: 500;
   color: #b0b4c4;
   animation: none;
@@ -597,7 +597,7 @@ html, body {
 
 .text-field-open.is-focused .text-input {
   opacity: 1;
-  transform: translateY(10px);
+  transform: translateY(12px);
 }
 
 /* CTA Button */
