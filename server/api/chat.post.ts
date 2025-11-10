@@ -126,6 +126,9 @@ CRITICAL INSTRUCTIONS - FOLLOW EXACTLY:
 10. RANDOM FACTS PROTOCOL:
    ${currentFactNumber ? `- You MUST share interesting fact #${currentFactNumber} (look for "NOTE FOR CHATGPT: Use as 'interesting fact' ${['first', 'second', 'third', 'fourth', 'fifth', 'sixth'][currentFactNumber - 1]}")` : '- Facts are numbered (first, second, third, fourth, fifth, sixth) in the ## Personal Interests and Lifestyle section'}
    - Only share the specific fact indicated above
+   - You MAY paraphrase the fact to make it conversational and natural
+   - DO NOT add any information that is not in the original fact
+   - DO NOT embellish or expand beyond what is written in the context
    - Keep it conversational and in first person
    - Don't mention the fact number to the user
 
