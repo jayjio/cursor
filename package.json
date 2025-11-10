@@ -4,9 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "npm run build:widget && nuxt build && npm run copy:widget-to-output",
-    "build:widget": "vite build --config widget/vite.config.ts && npm run copy:widget",
-    "copy:widget": "mkdir -p public/widget && cp dist/widget/jeremy-chat-widget.iife.js public/widget/ && cp dist/widget/nuxt-app.css public/widget/",
-    "copy:widget-to-output": "mkdir -p .output/public/widget && cp public/widget/jeremy-chat-widget.iife.js .output/public/widget/ && cp public/widget/nuxt-app.css .output/public/widget/ || true",
+    "build:widget": "vite build --config widget/vite.config.ts",
+    "copy:widget-to-output": "mkdir -p .output/public/widget && cp dist/widget/jeremy-chat-widget.iife.js .output/public/widget/ && cp dist/widget/nuxt-app.css .output/public/widget/",
     "dev": "nuxt dev",
     "dev:widget": "vite build --watch --config widget/vite.config.ts",
     "generate": "nuxt generate",
