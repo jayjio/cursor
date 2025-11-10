@@ -1,13 +1,42 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { jeremyContext } from '../data/jeremy-context'
 
-// In-memory counter for cycling through random facts
-let factCounter = 0
+// Track random facts to ensure no repeats
+let lastFactNumber = 0
 const totalFacts = 6 // Total number of "interesting facts" in the context
+let shownFacts: number[] = [] // Track facts shown in current cycle
 
-function getNextFactNumber() {
-  factCounter = (factCounter % totalFacts) + 1
-  return factCounter
+function getNextFactNumber(): number {
+  // If all facts have been shown, reset and start a new cycle
+  if (shownFacts.length >= totalFacts) {
+    shownFacts = []
+  }
+  
+  // Create array of available fact numbers (1 to totalFacts)
+  let availableFacts = Array.from({ length: totalFacts }, (_, i) => i + 1)
+    .filter(factNum => !shownFacts.includes(factNum))
+  
+  // If no available facts (shouldn't happen), reset
+  if (availableFacts.length === 0) {
+    shownFacts = []
+    availableFacts = Array.from({ length: totalFacts }, (_, i) => i + 1)
+  }
+  
+  // Ensure we don't repeat the last fact shown if there are alternatives
+  if (lastFactNumber > 0 && availableFacts.length > 1 && availableFacts.includes(lastFactNumber)) {
+    // Remove the last fact from available options to ensure no immediate repeat
+    availableFacts = availableFacts.filter(f => f !== lastFactNumber)
+  }
+  
+  // Randomly select from available facts
+  const randomIndex = Math.floor(Math.random() * availableFacts.length)
+  let selectedFact = availableFacts[randomIndex]
+  
+  // Mark this fact as shown
+  shownFacts.push(selectedFact)
+  lastFactNumber = selectedFact
+  
+  return selectedFact
 }
 
 export default defineEventHandler(async (event) => {
@@ -27,7 +56,7 @@ export default defineEventHandler(async (event) => {
   
   setHeader(event, 'Access-Control-Allow-Methods', 'POST, OPTIONS, GET')
   setHeader(event, 'Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With')
-  setHeader(event, 'Access-Control-Max-Age', '86400')
+  setHeader(event, 'Access-Control-Max-Age', String(86400))
   setHeader(event, 'Vary', 'Origin')
 
   // OPTIONS requests are handled by chat.options.ts
