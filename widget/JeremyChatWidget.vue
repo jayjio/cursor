@@ -941,6 +941,7 @@ const handleSubmit = async () => {
 .suggested-query-item-special {
   background: var(--bg-color);
   border: 2px solid transparent;
+  border-radius: 6px;
   background-image: 
     linear-gradient(var(--bg-color), var(--bg-color)),
     linear-gradient(135deg, #f4d4c0 0%, #e6b399 100%);
