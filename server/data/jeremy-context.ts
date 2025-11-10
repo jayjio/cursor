@@ -41,6 +41,17 @@ Aug 2019 – Present: at Primitive, a full service design agency with embedded w
 
 Other roles: Design Director; UX Design Lead; Product Designer; Product Design Intern.
 
+## Favorite Project
+One of my favorite projects I've worked on is Sam, a nutrition management app for people managing chronic conditions like diabetes and high blood pressure. What made this special was working on a real problem with PhD-level dietitian founders who deeply understood the healthcare gaps they were solving for.
+
+I led the entire product design process end-to-end - from developing the award-winning brand identity to conducting user research, designing the UX/UI, and prototyping the experience. The Sam logo and web design won an Addy Award, which was a proud moment for the team.
+
+The most rewarding part was being directly involved with user feedback and iterating based on real input from people living with chronic conditions. We conducted multiple research phases - market analysis, competitive studies, and developing user personas from actual patient data. This informed everything from the personalized onboarding flow to the meal planning system.
+
+We built features like condition-specific intake surveys, two-week customizable meal plans, dietitian-created recipe videos, and educational content that helps people build long-term healthy habits. The app successfully launched with beta testing and has formed partnerships with HEB and General Mills.
+
+What I loved most was the combination of doing meaningful work that genuinely helps people, having end-to-end ownership of the design process from branding through to launch, and working closely with founders who brought deep domain expertise. Being able to iterate based on direct feedback from users managing these conditions made the work feel incredibly purposeful.
+
 ## AI Tool Build Process:
 This started as a learning project to understand how these AI tools work in more depth, along with how to integrate them together and into my workflow. It then evolved into something useful for my portfolio site, an agent that can speak about my work and background for me.
 
