@@ -3,8 +3,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run build:widget && nuxt build && npm run copy:widget-to-output",
+    "build": "npm run build:widget && npm run copy:widget-to-public && nuxt build",
     "build:widget": "vite build --config widget/vite.config.ts",
+    "copy:widget-to-public": "mkdir -p public/widget && cp dist/widget/jeremy-chat-widget.iife.js public/widget/ && cp dist/widget/nuxt-app.css public/widget/",
     "copy:widget-to-output": "mkdir -p .output/public/widget && cp dist/widget/jeremy-chat-widget.iife.js .output/public/widget/ && cp dist/widget/nuxt-app.css .output/public/widget/",
     "dev": "nuxt dev",
     "dev:widget": "vite build --watch --config widget/vite.config.ts",
