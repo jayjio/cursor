@@ -1,12 +1,15 @@
 import Anthropic from '@anthropic-ai/sdk'
 import { jeremyContext } from '../data/jeremy-context'
 
-// Track random facts to ensure sequential ordering with no repeats
-let currentFactIndex = 0 // Track which fact we're on in the current cycle
+// Track facts to ensure sequential ordering (1-6, then repeat)
+let currentFactIndex = 0 // Track which fact we're on in the current cycle (0-5, maps to 1-6)
 const totalFacts = 6 // Total number of "interesting facts" in the context
 
 function getNextFactNumber(): number {
-  // Move to the next fact in sequence (1-6)
+  // Move to the next fact in sequence (1-6, then cycles back to 1)
+  // When currentFactIndex is 0, returns 1 (first fact)
+  // When currentFactIndex is 5, returns 6 (sixth fact)
+  // When currentFactIndex is 6, cycles back to 1
   currentFactIndex = (currentFactIndex % totalFacts) + 1
   
   return currentFactIndex
@@ -29,7 +32,7 @@ export default defineEventHandler(async (event) => {
   
   setHeader(event, 'Access-Control-Allow-Methods', 'POST, OPTIONS, GET')
   setHeader(event, 'Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With')
-  setHeader(event, 'Access-Control-Max-Age', String(86400))
+  setHeader(event, 'Access-Control-Max-Age', '86400')
   setHeader(event, 'Vary', 'Origin')
 
   // OPTIONS requests are handled by chat.options.ts
