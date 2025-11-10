@@ -1262,7 +1262,6 @@ html, body {
   .loading-spinner,
   .fog-layer-1,
   .fog-layer-2,
-  .fog-layer-3,
   .center-glow {
     animation: none;
   }
