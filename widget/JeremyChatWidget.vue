@@ -548,10 +548,14 @@ const handleSubmit = async () => {
   font-size: 14px;
   line-height: 1.6;
   color: var(--white-color);
-  margin: 0 0 16px 0;
+  margin: 0 0 8px 0;
   text-align: left;
   width: 100%;
   max-width: 817px;
+}
+
+.section-description.tech-item {
+  margin: 0 0 4px 0;
 }
 
 .section-description:last-of-type {
