@@ -506,13 +506,14 @@ const handleSubmit = async () => {
   align-items: flex-start;
   padding: 0;
   overflow: visible;
+  background: transparent;
 }
 
 /* Widget Container - Background with fixed width and padding */
 .widget-container {
   width: 1161px;
   max-width: 100%;
-  min-height: 100%;
+  min-height: auto;
   padding: 60px 0;
   background-color: #16171e;
   display: flex;
@@ -520,6 +521,7 @@ const handleSubmit = async () => {
   align-items: center;
   justify-content: flex-start;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 /* Main Content */
