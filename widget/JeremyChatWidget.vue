@@ -958,6 +958,7 @@ const handleSubmit = async () => {
   background-origin: padding-box !important;
   border: 2px solid transparent !important;
   border-color: transparent !important;
+  border-radius: 6px !important;
   color: #1b1e2e !important;
   font-weight: 600;
   transform: translateX(4px);
