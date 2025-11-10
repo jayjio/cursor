@@ -23,13 +23,13 @@ export default defineEventHandler(async (event) => {
     const projectRoot = process.cwd()
     
     // Try multiple possible locations for the file
-    // On Vercel, files might be in different locations
+    // On Vercel, files are in .output/public/widget/ after build
     const possiblePaths = [
-      join(projectRoot, 'public', 'widget', file), // Standard public folder
-      join(projectRoot, '.output', 'public', 'widget', file), // Build output
+      join(projectRoot, '.output', 'public', 'widget', file), // Build output (production)
+      join(projectRoot, 'public', 'widget', file), // Development
       join(projectRoot, 'dist', 'widget', file), // Direct build
-      join(__dirname, '..', '..', '..', 'public', 'widget', file), // Relative from server
       join(__dirname, '..', '..', '..', '.output', 'public', 'widget', file), // Relative build
+      join(__dirname, '..', '..', '..', 'public', 'widget', file), // Relative dev
     ]
     
     let fileContent
