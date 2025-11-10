@@ -473,7 +473,7 @@ html, body {
   background-color: var(--bg-color);
   width: 100%;
   font-family: 'Sora', sans-serif;
-  padding: 40px 20px;
+  padding: 0;
   overflow: visible;
 }
 
