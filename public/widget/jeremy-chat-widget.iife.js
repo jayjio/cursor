@@ -10566,8 +10566,9 @@ var JeremyChatWidget = (function(exports) {
               class: "cta-section"
             }, [
               _cache[4] || (_cache[4] = createBaseVNode("h1", { class: "section-title" }, "get to know [not really] me", -1)),
-              _cache[5] || (_cache[5] = createBaseVNode("p", { class: "section-description" }, "This is an interactive AI tool that can answer questions about my experience, my work, and what I care about. I built it using Claude's API and tools like Figma, Cursor, the Model Context Protocol, and a context document to give it relevant resources about me.", -1)),
-              _cache[6] || (_cache[6] = createBaseVNode("p", { class: "section-description" }, "Want to hear more about how it was built? Check out the first suggested question down below.", -1)),
+              _cache[5] || (_cache[5] = createBaseVNode("p", { class: "section-description" }, "This is an AI tool I built that can answer questions about my experience, work, interests, and who knows what else. Hopefully not my security questions and biggest regrets.", -1)),
+              _cache[6] || (_cache[6] = createBaseVNode("p", { class: "section-description" }, "For design and dev, I used Figma with the MCP server protocol, Cursor, and Claude Code. For the LLM, I used the Claude API and an extensive context doc along with Github and Vercel for deployment and finally a standalone Vue component embedded into my Webflow site.", -1)),
+              _cache[7] || (_cache[7] = createBaseVNode("p", { class: "section-description" }, "Want to hear more about how it was built? Check out the first suggested question down below ↓", -1)),
               createBaseVNode("div", _hoisted_2, [
                 createBaseVNode("div", {
                   class: normalizeClass(["text-field-open", { "is-focused": isFocused.value || inputValue.value }]),
@@ -10626,7 +10627,7 @@ var JeremyChatWidget = (function(exports) {
               ref: loadingRef,
               class: "loading-container"
             }, [
-              _cache[7] || (_cache[7] = createStaticVNode('<svg class="loading-spinner" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" data-v-b10708b0><defs data-v-b10708b0><radialGradient id="fogGradient1" cx="30%" cy="30%" data-v-b10708b0><stop offset="0%" stop-color="rgba(255, 255, 255, 0.15)" data-v-b10708b0></stop><stop offset="50%" stop-color="rgba(255, 255, 255, 0.05)" data-v-b10708b0></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-b10708b0></stop></radialGradient><radialGradient id="fogGradient2" cx="70%" cy="60%" data-v-b10708b0><stop offset="0%" stop-color="rgba(252, 243, 234, 0.12)" data-v-b10708b0></stop><stop offset="60%" stop-color="rgba(252, 243, 234, 0.03)" data-v-b10708b0></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-b10708b0></stop></radialGradient><radialGradient id="fogGradient3" cx="50%" cy="80%" data-v-b10708b0><stop offset="0%" stop-color="rgba(255, 255, 255, 0.1)" data-v-b10708b0></stop><stop offset="50%" stop-color="rgba(255, 255, 255, 0.02)" data-v-b10708b0></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-b10708b0></stop></radialGradient><radialGradient id="centerGlow" data-v-b10708b0><stop offset="0%" stop-color="rgba(255, 255, 255, 0.12)" data-v-b10708b0></stop><stop offset="70%" stop-color="rgba(255, 255, 255, 0)" data-v-b10708b0></stop></radialGradient><filter id="glow" data-v-b10708b0><feGaussianBlur stdDeviation="2" result="coloredBlur" data-v-b10708b0></feGaussianBlur><feMerge data-v-b10708b0><feMergeNode in="coloredBlur" data-v-b10708b0></feMergeNode><feMergeNode in="SourceGraphic" data-v-b10708b0></feMergeNode></feMerge></filter></defs><circle cx="60" cy="60" r="55" fill="url(#fogGradient1)" class="fog-layer-1" data-v-b10708b0></circle><circle cx="60" cy="60" r="55" fill="url(#fogGradient2)" class="fog-layer-2" data-v-b10708b0></circle><circle cx="60" cy="60" r="55" fill="url(#fogGradient3)" class="fog-layer-3" data-v-b10708b0></circle><circle cx="60" cy="60" r="40" fill="url(#centerGlow)" class="center-glow" filter="url(#glow)" data-v-b10708b0></circle></svg>', 1)),
+              _cache[8] || (_cache[8] = createStaticVNode('<svg class="loading-spinner" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" data-v-f4462bcb><defs data-v-f4462bcb><radialGradient id="fogGradient1" cx="30%" cy="30%" data-v-f4462bcb><stop offset="0%" stop-color="rgba(255, 255, 255, 0.15)" data-v-f4462bcb></stop><stop offset="50%" stop-color="rgba(255, 255, 255, 0.05)" data-v-f4462bcb></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-f4462bcb></stop></radialGradient><radialGradient id="fogGradient2" cx="70%" cy="60%" data-v-f4462bcb><stop offset="0%" stop-color="rgba(252, 243, 234, 0.12)" data-v-f4462bcb></stop><stop offset="60%" stop-color="rgba(252, 243, 234, 0.03)" data-v-f4462bcb></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-f4462bcb></stop></radialGradient><radialGradient id="fogGradient3" cx="50%" cy="80%" data-v-f4462bcb><stop offset="0%" stop-color="rgba(255, 255, 255, 0.1)" data-v-f4462bcb></stop><stop offset="50%" stop-color="rgba(255, 255, 255, 0.02)" data-v-f4462bcb></stop><stop offset="100%" stop-color="rgba(255, 255, 255, 0)" data-v-f4462bcb></stop></radialGradient><radialGradient id="centerGlow" data-v-f4462bcb><stop offset="0%" stop-color="rgba(255, 255, 255, 0.12)" data-v-f4462bcb></stop><stop offset="70%" stop-color="rgba(255, 255, 255, 0)" data-v-f4462bcb></stop></radialGradient><filter id="glow" data-v-f4462bcb><feGaussianBlur stdDeviation="2" result="coloredBlur" data-v-f4462bcb></feGaussianBlur><feMerge data-v-f4462bcb><feMergeNode in="coloredBlur" data-v-f4462bcb></feMergeNode><feMergeNode in="SourceGraphic" data-v-f4462bcb></feMergeNode></feMerge></filter></defs><circle cx="60" cy="60" r="55" fill="url(#fogGradient1)" class="fog-layer-1" data-v-f4462bcb></circle><circle cx="60" cy="60" r="55" fill="url(#fogGradient2)" class="fog-layer-2" data-v-f4462bcb></circle><circle cx="60" cy="60" r="55" fill="url(#fogGradient3)" class="fog-layer-3" data-v-f4462bcb></circle><circle cx="60" cy="60" r="40" fill="url(#centerGlow)" class="center-glow" filter="url(#glow)" data-v-f4462bcb></circle></svg>', 1)),
               createBaseVNode("p", _hoisted_8, toDisplayString(currentLoadingMessage.value), 1)
             ], 512)) : createCommentVNode("", true),
             aiResponse.value ? (openBlock(), createElementBlock("div", {
@@ -10652,7 +10653,7 @@ var JeremyChatWidget = (function(exports) {
               createBaseVNode("button", {
                 class: "ask-another-button",
                 onClick: scrollToTop
-              }, [..._cache[8] || (_cache[8] = [
+              }, [..._cache[9] || (_cache[9] = [
                 createBaseVNode("span", { class: "ask-another-text" }, "Ask another", -1),
                 createBaseVNode("svg", {
                   class: "cycle-icon-refresh",
@@ -10675,7 +10676,7 @@ var JeremyChatWidget = (function(exports) {
                 key: 0,
                 class: "another-fact-button",
                 onClick: getAnotherFact
-              }, [..._cache[9] || (_cache[9] = [
+              }, [..._cache[10] || (_cache[10] = [
                 createBaseVNode("span", { class: "another-fact-text" }, "Next fact", -1),
                 createBaseVNode("svg", {
                   class: "arrow-icon-right",
@@ -10707,7 +10708,7 @@ var JeremyChatWidget = (function(exports) {
     }
     return target;
   };
-  const JeremyChatWidget2 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-b10708b0"]]);
+  const JeremyChatWidget2 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-f4462bcb"]]);
   function injectCSS(cssUrl) {
     if (typeof document === "undefined") return;
     const existingLink = document.querySelector("link[data-jeremy-chat-widget-css]");
